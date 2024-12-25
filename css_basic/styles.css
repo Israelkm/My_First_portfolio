@@ -1,0 +1,30 @@
+body {
+    display: flex; /* Make body a flex container */
+    flex-direction: column; /* Arrange items in a column */
+    min-height: 100vh; /* Ensure body takes up full viewport height */
+}
+
+main {
+    display: flex; /* Make main a flex container */
+    flex-direction: row; /* Arrange items in a row */
+    flex: auto; /* Allow main to take up available space */
+}
+
+article {
+    flex: 2; /* Article takes up 2/3 of main's width */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    padding: 10px; /* Add some padding for visual separation */
+}
+
+aside {
+    flex: 1; /* Aside takes up 1/3 of main's width */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    padding: 10px; /* Add some padding for visual separation */
+    background-color: #eee; /* Light gray background for aside */
+}
+
+header, footer {
+    padding: 10px;
+    background-color: #ddd; /* Slightly darker gray background for header/footer */
+    text-align: center; /* Center the text in header/footer */
+}
